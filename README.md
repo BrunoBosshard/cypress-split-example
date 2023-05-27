@@ -1,8 +1,8 @@
 # cypress-split-example ![cypress version](https://img.shields.io/badge/cypress-12.3.0-brightgreen) ![cypress-split version](https://img.shields.io/badge/cypress--split-1.3.8-brightgreen)
 
-> Split Cypress specs on GitHub Actions and CircleCI
+> Split Cypress specs on GitHub Actions
 
-Using the free plugin [cypress-split](https://github.com/bahmutov/cypress-split) without any external services
+Using the free plugin [cypress-split](https://github.com/bahmutov/cypress-split)
 
 ![Cypress split on GitHub Actions](./images/split.png)
 
@@ -16,6 +16,10 @@ Reusable GHA | [reusable.yml](./.github/workflows/reusable.yml) | [![reusable](h
 <!-- prettier-ignore-end -->
 
 Reusable workflow via [cypress-workflows](https://github.com/bahmutov/cypress-workflows)
+
+## OpenCart order process
+
+This example uses an [OpenCart order process](https://github.com/exense/step-samples) provided by exense GmbH of Switzerland
 
 ## Small print
 
