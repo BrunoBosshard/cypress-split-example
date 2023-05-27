@@ -3,5 +3,6 @@
 /// <reference types="cypress" />
 
 it('runs test B1', () => {
-  cy.wait(10_000)
+  // Custom command defined in cypress/support/e2e.js
+  cy.Opencart_PlaceOrder()
 })

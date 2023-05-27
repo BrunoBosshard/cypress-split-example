@@ -1,5 +1,7 @@
 name: reusable
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 jobs:
   tests:
     # use the reusable workflow to check out the code, install dependencies
