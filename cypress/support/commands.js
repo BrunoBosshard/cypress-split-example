@@ -25,5 +25,4 @@ Cypress.Commands.add('Opencart_PlaceOrder', () => {
     cy.get('#button-payment-method').click()
     cy.get('#button-confirm').click()
     cy.contains('Your order has been placed!')
-    cy.wait(10000)
   })

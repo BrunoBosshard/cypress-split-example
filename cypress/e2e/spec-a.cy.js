@@ -4,5 +4,5 @@
 
 it('runs test A1', () => {
   // Custom command defined in cypress/support/e2e.js
-  cy.Opencart_PlaceOrder
+  cy.Opencart_PlaceOrder()
 })
