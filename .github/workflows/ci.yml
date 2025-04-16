@@ -5,7 +5,7 @@ on:
 jobs:
   # example running all tests on a single machine
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
 
   # example splitting all tests across GitHub machines
   prepare:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     # explicitly set the output of this job
     # so that other jobs can use it
     outputs:
@@ -35,7 +35,7 @@ jobs:
 
   test-split:
     needs: prepare
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
